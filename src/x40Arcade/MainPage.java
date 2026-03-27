@@ -23,12 +23,21 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.JScrollPane;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.BoxLayout;
+import javax.swing.JTextField;
+import java.awt.Insets;
+import java.awt.CardLayout;
+import net.miginfocom.swing.MigLayout;
+import javax.swing.JButton;
 
 public class MainPage extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTable table;
+	private JTextField txtName;
+	private JTextField txtFlavor;
+	private JTextField txtPrice;
+	private JTextField txtStock;
 
 	/**
 	 * Launch the application.
@@ -79,9 +88,49 @@ public class MainPage extends JFrame {
 		
 		JPanel orderPanelWest = new JPanel();
 		orderPanelWest.setBorder(null);
-		orderPanelWest.setPreferredSize(new Dimension(200, 100));
+		orderPanelWest.setPreferredSize(new Dimension(150, 100));
 		orderPanelWest.setBackground(new Color(255, 195, 113));
 		contentPane.add(orderPanelWest, BorderLayout.WEST);
+		orderPanelWest.setLayout(new MigLayout("", "[47px][][91px]", "[21px][21px][21px][21px][]"));
+		
+		JLabel lblName = new JLabel("Name");
+		lblName.setForeground(new Color(0, 0, 0));
+		lblName.setFont(new Font("Segoe UI Black", Font.PLAIN, 15));
+		orderPanelWest.add(lblName, "cell 0 0,alignx center,aligny top");
+		
+		txtName = new JTextField();
+		orderPanelWest.add(txtName, "cell 2 0,alignx center,aligny top");
+		txtName.setColumns(10);
+		
+		JLabel lblFlavor = new JLabel("Flavor");
+		lblFlavor.setForeground(Color.BLACK);
+		lblFlavor.setFont(new Font("Segoe UI Black", Font.PLAIN, 15));
+		orderPanelWest.add(lblFlavor, "cell 0 1,alignx left,aligny top");
+		
+		txtFlavor = new JTextField();
+		txtFlavor.setColumns(10);
+		orderPanelWest.add(txtFlavor, "cell 2 1,alignx right,aligny top");
+		
+		JLabel lblPrice = new JLabel("Price");
+		lblPrice.setForeground(Color.BLACK);
+		lblPrice.setFont(new Font("Segoe UI Black", Font.PLAIN, 15));
+		orderPanelWest.add(lblPrice, "cell 0 2,alignx center,aligny top");
+		
+		txtPrice = new JTextField();
+		txtPrice.setColumns(10);
+		orderPanelWest.add(txtPrice, "cell 2 2,alignx left,aligny top");
+		
+		JLabel lblStock = new JLabel("Stock");
+		lblStock.setForeground(Color.BLACK);
+		lblStock.setFont(new Font("Segoe UI Black", Font.PLAIN, 15));
+		orderPanelWest.add(lblStock, "cell 0 3,alignx center,aligny top");
+		
+		txtStock = new JTextField();
+		txtStock.setColumns(10);
+		orderPanelWest.add(txtStock, "cell 2 3,alignx center,aligny top");
+		
+		JButton btnNewButton = new JButton("New button");
+		orderPanelWest.add(btnNewButton, "cell 2 4");
 		
 		JPanel tablePanelCenter = new JPanel();
 		contentPane.add(tablePanelCenter, BorderLayout.CENTER);
@@ -95,6 +144,41 @@ public class MainPage extends JFrame {
 		table.setBorder(null);
 		table.setModel(new DefaultTableModel(
 			new Object[][] {
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
+				{null, null, null, null},
 				{null, null, null, null},
 				{null, null, null, null},
 				{null, null, null, null},
