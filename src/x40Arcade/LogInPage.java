@@ -12,7 +12,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JTextField;
 
-public class IceCandyManager extends JFrame {
+public class LogInPage extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
@@ -28,7 +28,7 @@ public class IceCandyManager extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					IceCandyManager frame = new IceCandyManager();
+					LogInPage frame = new LogInPage();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -40,7 +40,7 @@ public class IceCandyManager extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public IceCandyManager() {
+	public LogInPage() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 656, 349);
 		contentPane = new JPanel();
