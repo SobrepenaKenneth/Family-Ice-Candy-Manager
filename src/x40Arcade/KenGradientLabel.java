@@ -7,7 +7,7 @@ import java.awt.*;
  * Used for gradient label - x40 (Sobrepena) ver: 0.1
  */
 public class KenGradientLabel extends JLabel {
-
+	private static final long serialVersionUID = 1L;
 	private Color color1 = new Color(255, 94, 58);
 	private Color color2 = new Color(255, 195, 113);
 

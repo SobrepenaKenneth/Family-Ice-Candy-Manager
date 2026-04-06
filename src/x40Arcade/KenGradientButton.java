@@ -7,6 +7,7 @@ import java.awt.*;
  * Used for gradient Button - x40 (Sobrepena) ver: 0.1
  */
 public class KenGradientButton extends JButton {
+	private static final long serialVersionUID = 1L;
 
 	private boolean pressed = false;
 
